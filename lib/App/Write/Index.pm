@@ -46,9 +46,9 @@ sub parse_options {
     GetOptions
         "h|help" => sub { pod2usage(0) },
         "v|version" => sub { printf "%s %s\n", __PACKAGE__, __PACKAGE__->VERSION; exit },
-        "d|dir=s@" => \(my @dir = ("local")),
+        "d|dir=s@" => \(my $dir = ["local"]),
     or pod2usage(1);
-    $self->{dir} = $self->build_dir(@dir);
+    $self->{dir} = $self->build_dir(@$dir);
     $self;
 }
 
