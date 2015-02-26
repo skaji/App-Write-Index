@@ -13,7 +13,7 @@ You should look at https://github.com/miyagawa/Carmel
 
 # HOW TO USE
 
-Let's assume your project has cpanfile.
+Let's assume you develop a project that has cpan module dependencies.
 
 In you local machine, install deps to local/ dir, and git-commit index.txt:
 

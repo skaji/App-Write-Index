@@ -32,8 +32,8 @@ EOF
     for my $dist (@distribution) {
         my $pathname = $dist->{pathname};
         for my $package (@{ $dist->{package} }) {
-        printf $fh "%-36s %-8s %s\n",
-            $package->{name}, $package->{version} // 'undef', $pathname;
+            printf $fh "%-36s %-8s %s\n",
+                $package->{name}, $package->{version} // 'undef', $pathname;
         }
     }
 }
@@ -106,7 +106,7 @@ You should look at https://github.com/miyagawa/Carmel
 
 =head1 HOW TO USE
 
-Let's assume your project has cpanfile.
+Let's assume you develop a project that has cpan module dependencies.
 
 In you local machine, install deps to local/ dir, and git-commit index.txt:
 
