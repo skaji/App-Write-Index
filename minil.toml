@@ -1,0 +1,4 @@
+name = "App-Write-Index"
+# badges = ["travis"]
+module_maker="ModuleBuildTiny"
+

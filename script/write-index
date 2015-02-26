@@ -1,0 +1,25 @@
+#!perl
+use 5.010;
+use strict;
+use utf8;
+use warnings;
+use App::Write::Index;
+
+App::Write::Index->new->parse_options(@ARGV)->run;
+
+__END__
+
+=head1 SYNOPSIS
+
+    $ write-index
+
+    Options:
+    -d, --dir DIR     specify package search directories, default: local/
+    -h, --help        show help
+    -v, --version     show version
+
+    Eg:
+    $ write-index
+    $ write-index --dir local --dir extlib > index.txt
+
+=cut
